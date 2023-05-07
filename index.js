@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://singhjassi693:Jassi52774@jassibdcluster.nsocz5o.mongodb.net/university', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongoURI', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const studentSchema = new mongoose.Schema({
   student_id: { type: Number, required: true },
